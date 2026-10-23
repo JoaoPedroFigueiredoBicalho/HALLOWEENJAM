@@ -1,24 +1,10 @@
-var move_x = 0;
-var move_y = 0;
+var _xinput = keyboard_check(vk_right) + keyboard_check(ord("D"))
+            - keyboard_check(vk_left) - keyboard_check(ord("A"));
 
-if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
-    move_x += 1;
-}
-if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
-    move_x -= 1;
-}
-if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
-    move_y += 1;
-}
-if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
-    move_y -= 1;
-}
+var _yinput = keyboard_check(vk_down) + keyboard_check(ord("S"))
+            - keyboard_check(vk_up) - keyboard_check(ord("W"));
 
-var input_length = point_distance(0, 0, move_x, move_y);
-if (input_length > 0) {
-    move_x /= input_length;
-    move_y /= input_length;
-}
+_xinput = clamp(_xinput, -1, 1);
+_yinput = clamp(_yinput, -1, 1);
 
-x += move_x * move_speed;
-y += move_y * move_speed;
+move_and_collide(_xinput * move_speed, _yinput * move_speed, obj_wall, 4, 0, 0, move_speed, move_speed);

@@ -2,5 +2,7 @@
   "FolderOrderSettings":[
     {"name":"group1","order":1,"path":"folders/group1.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+  ],
 }
