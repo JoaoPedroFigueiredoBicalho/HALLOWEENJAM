@@ -4,5 +4,6 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
+    {"name":"Sprite1","order":2,"path":"sprites/Sprite1/Sprite1.yy",},
   ],
 }
