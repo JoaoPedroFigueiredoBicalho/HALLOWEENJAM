@@ -3,7 +3,9 @@
     {"name":"group1","order":1,"path":"folders/group1.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_flashlight","order":4,"path":"objects/obj_flashlight/obj_flashlight.yy",},
     {"name":"obj_wall","order":1,"path":"objects/obj_wall/obj_wall.yy",},
-    {"name":"Sprite1","order":2,"path":"sprites/Sprite1/Sprite1.yy",},
+    {"name":"spr_flashlight_cone","order":3,"path":"sprites/spr_flashlight_cone/spr_flashlight_cone.yy",},
+    {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},
   ],
 }
